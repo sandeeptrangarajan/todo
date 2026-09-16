@@ -1,55 +1,85 @@
-# The Ledger — To-Do & Habit Tracker
+# ⚡ Apex Focus — Super To-Do & Productivity Suite
 
-A clean, elegant, paper-styled to-do list and habit tracker web application designed for daily productivity.
+A stunning, ultra-modern productivity suite built as a single zero-dependency HTML file. Powered by glassmorphism design, smooth animations, and real-time local persistence.
 
-Live Demo: [https://sandeeptrangarajan.github.io/todo/](https://sandeeptrangarajan.github.io/todo/)
+🌐 **Live Demo**: [https://sandeeptrangarajan.github.io/todo/](https://sandeeptrangarajan.github.io/todo/)
 
 ---
 
 ## ✨ Features
 
-- **Daily Tasks**:
-  - Add tasks with priority levels (Low, Medium, High) and optional due dates.
-  - Interactive checkboxes with smooth completion state.
-  - Automatic sorting (pending high-priority first, completed items at the bottom).
-  - Overdue task indicator badges.
-- **Daily Habits**:
-  - Track 7-day visual consistency for habits.
-  - Interactive day-by-day checkoff circles.
-  - Intelligent streak counter (preserves streaks and updates dynamically).
-- **Statistics Bar**:
-  - Real-time counters for completed tasks, active streaks, and longest streaks.
-- **Offline & Cross-Environment Persistence**:
-  - Automatically saves all your data to browser `localStorage`.
-  - Also compatible with sandbox iframe storage environments.
+### ✅ Super-Charged Task Manager
+- **Projects & Categories**: Organize tasks into 💼 Work, 🧠 Study, ⚡ Personal, 🎯 Goals, 🛒 Shopping
+- **Priority Levels**: 🔴 High, 🟡 Medium, 🟢 Low with glowing color-coded chips
+- **Due Date Badges**: Overdue, Due Today, Tomorrow detection
+- **Smart Filtering**: All, Pending, Completed, ⭐ Starred, 🔴 Overdue views
+- **Multi-Sort**: By Priority, Due Date, Newest, or A→Z
+- **Subtask Progress Bars**: Visual mini progress bars per task
+- **Star / Favorite**: Pin important tasks for quick access
+- **Completion Ring**: Animated SVG progress ring showing daily completion %
+
+### 🔥 Habit Streak Matrix
+- 7-day visual dot grid tracker per habit
+- Live streak counter with 🔥 flame badges
+- Best streak history tracking
+- Stat cards for: Total habits, done today, active streaks, best streak
+
+### ⏱️ Pomodoro Focus Station
+- **Focus** (25m) / **Short Break** (5m) / **Long Break** (15m) modes
+- Animated circular SVG countdown arc
+- Ambient soundscapes synthesized entirely with **Web Audio API** (no audio files!):
+  - 🔇 Off | 🌧️ Rain | 🌲 Forest | ☕ Cafe | 🌊 White Noise
+- Session dot tracker — up to 8 pom sessions shown
+- Tab title shows timer countdown when running
+
+### 📊 Analytics & Insights
+- Weekly bar chart of completed tasks
+- 28-day completion heatmap
+- Priority distribution breakdown
+- Project breakdown
+- Total focus sessions & minutes logged
+
+### 🎨 Premium Design
+- Dark / Light theme toggle with smooth transition
+- Glassmorphism cards with ambient gradient glow
+- Google Fonts: **Outfit** + **Inter** + **JetBrains Mono**
+- Micro-animations on task insert, hover, completion
+- 🎉 Confetti canvas celebration when all tasks are done
+- ✅ Completion chime & ⏱️ gong sounds on focus session end
+
+### ⌨️ Keyboard Shortcuts
+| Key | Action |
+|-----|--------|
+| `N` | New task (from anywhere) |
+| `Ctrl/Cmd + K` | Focus search bar |
+| `Enter` | Submit task / habit |
+| `Escape` | Close modal / blur search |
+| `Space` | Play/Pause Pomodoro (Focus view) |
+
+### 💾 Data Persistence
+- All data saved to **localStorage** (works offline, no server needed)
+- JSON **Export / Import** for backup and restore
+- **Clear completed** and **full reset** options
 
 ---
 
-## 🚀 How to Deploy to GitHub Pages
+## 🚀 GitHub Pages Deployment
 
-1. Go to your repository on GitHub: `https://github.com/sandeeptrangarajan/todo`
-2. Click **Settings** (top navigation tab).
-3. In the left sidebar under "Code and automation", click **Pages**.
-4. Under **Build and deployment**:
-   - **Source**: Select `Deploy from a branch`.
-   - **Branch**: Select `main` (or your default branch) and `/ (root)`.
-   - Click **Save**.
-5. Wait ~1-2 minutes. GitHub will provide your live URL:
-   `https://sandeeptrangarajan.github.io/todo/`
+This app is auto-deployed via GitHub Actions on every push to `main`.
 
-> **Note**: The main file is named `index.html`, ensuring GitHub Pages and static web hosts automatically serve it at the root URL.
+To enable on your fork:
+1. Go to **Settings → Pages**
+2. Source: `Deploy from a branch`, Branch: `main`, Folder: `/ (root)`
+3. Save → live at `https://<username>.github.io/todo/`
 
 ---
 
-## 💻 Running Locally
+## 💻 Run Locally
 
-Simply double-click `index.html` or open it in any web browser, or serve it using any local web server:
+Open `index.html` directly in any modern browser — **zero build steps, zero dependencies!**
 
 ```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node / npx
+# Or serve with any local server:
 npx serve .
+python -m http.server 8000
 ```
-Then visit `http://localhost:8000` (or `http://localhost:3000`).
